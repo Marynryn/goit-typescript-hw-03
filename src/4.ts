@@ -1,4 +1,3 @@
-
 class Key {
   private signature: number;
   constructor() {
@@ -24,7 +23,7 @@ abstract class House {
 
   constructor(key: Key) {
     this.key = key;
-    this.door = false; // Двері за замовчуванням закриті
+    this.door = false;
   }
 
   abstract openDoor(key: Key): void;
@@ -56,7 +55,7 @@ const person = new Person(myKey);
 house.openDoor(person.getKey());
 
 house.comeIn(person);
-export { };
+export {};
 // # Завдання 4 *
 // У цьому завдання вам належить реалізувати сценарій життя, де людина, ключ і будинок взаємодіють один з одним.
 
